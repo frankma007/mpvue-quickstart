@@ -12,7 +12,7 @@ module.exports = {
     "name": {
       "type": "string",
       "required": true,
-      "message": "Project name"
+      "message": "请填写项目名称"
     },
     "appid": {
       "type": "string",
@@ -23,16 +23,16 @@ module.exports = {
     "description": {
       "type": "string",
       "required": false,
-      "message": "Project description",
+      "message": "请填写项目描述",
       "default": "A Mpvue project"
     },
     "author": {
       "type": "string",
-      "message": "Author"
+      "message": "请填写作者名称"
     },
     "build": {
       "type": "list",
-      "message": "Vue build",
+      "message": "mpvue仅支持runtime-only",
       "choices": [
         // {
         //   "name": "Runtime + Compiler: recommended for most users",
@@ -46,13 +46,13 @@ module.exports = {
         }
       ]
     },
-    "vuex": {
-      "type": "confirm",
-      "message": "Use Vuex?"
-    },
+    // "vuex": {
+    //   "type": "confirm",
+    //   "message": "Use Vuex?"
+    // },
     "lint": {
       "type": "confirm",
-      "message": "Use ESLint to lint your code?"
+      "message": "是否使用ESLint？"
     },
     // "lintConfig": {
     //   "when": "lint",
@@ -78,7 +78,7 @@ module.exports = {
     // },
     "test": {
       "value": false,
-      "message": "小程序测试，敬请关注最新微信开发者工具的“测试报告”功能"
+      "message": "欢迎学习mpvue相关课程，地址：https://coding.imooc.com/class/376.html"
     }
   },
   "filters": {
